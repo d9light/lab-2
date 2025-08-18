@@ -1,6 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+
+MATRIZES Faça um programa em C que armazene numa matriz de inteiros (de tamanho m x 6) os seguintes
+dados COVID referentes a m municípios:
+a. A primeira coluna guarda o código do município;
+b. A segunda coluna guarda a quantidade de habitantes do município;
+c. A terceira coluna guarda o total de casos confirmados;
+d. A quarta coluna guarda o total de óbitos;
+e. A quinta coluna guarda a incidência de casos a cada 100 mil habitantes;
+f. A sexta coluna guarda a mortalidade a cada 100 mil habitantes.
+
+Exemplo: um município com 283 mil habitantes, 52 mil casos e 850 óbitos, tem uma incidência de 18374
+casos por 100 mil habitantes e uma mortalidade de 300 óbitos por 100 mil habitantes.
+Faça um programa em C que:
+a. Leia e preencha as quatro primeiras colunas da matriz;
+b. Calcule e armazene as duas últimas colunas da matriz;
+c. Imprima toda a matriz;
+d. Mostre qual o código do município que tem a maior mortalidade;
+e. Mostre qual o código do município que tem a maior incidência de casos.
+Cada um dos itens acima deve ser uma função separada.
+
+*/
+
+
 int** criarMatriz(int m, int n) {
     int** matriz = (int**) malloc(m * sizeof(int*));
     for (int i = 0; i < m; i++) {
